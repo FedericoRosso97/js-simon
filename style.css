@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(56, 56, 232);
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    text-align: center;
+    color: rgb(63, 184, 184);
+    background-color: white;
+    width: 60%;
+    height: 50vh;
+}
