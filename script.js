@@ -8,17 +8,14 @@ let conto=setInterval(countDown,1000,lesson);
 
 function countDown(lesson){
     let today = new Date();
-    let now = today.toLocaleString();
+    let now = Date.now()
 
-    let millLesson=lesson.getMilliseconds();
-    //let millNow=now.getMilliseconds();
 
-    let End=millLesson-now;
+    let End=lesson-now;
     if (End==0){
         clearInterval(conto);
     }
-    console.log(lesson);
-    console.log(millLesson);
+
     console.log(now)
     console.log(End);
     return End;
