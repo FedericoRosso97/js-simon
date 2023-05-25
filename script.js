@@ -1,14 +1,25 @@
 const lesson=new Date(2023,4,26,09,30);
-console.log(lesson);
+//console.log(lesson);
 
-let today = new Date();
-let now = today.toLocaleString();
-console.log(now);
 
-let Countdown=countDown(today,lesson)
-console.log(Countdown);
+let conto=setInterval(countDown,1000,lesson);
 
-function countDown(date1,date2){
-    let End=date1-date2
+
+
+function countDown(lesson){
+    let today = new Date();
+    let now = today.toLocaleString();
+
+    let millLesson=lesson.getMilliseconds();
+    //let millNow=now.getMilliseconds();
+
+    let End=millLesson-now;
+    if (End==0){
+        clearInterval(conto);
+    }
+    console.log(lesson);
+    console.log(millLesson);
+    console.log(now)
+    console.log(End);
     return End;
 }
