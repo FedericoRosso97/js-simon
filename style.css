@@ -15,9 +15,20 @@ main{
 }
 .container{
     text-align: center;
+    justify-content: space-evenly;
     color: rgb(63, 184, 184);
     background-color: white;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 60%;
-    height: 60vh;
+    font-size:2rem;
+    border-radius: 10px;
+}
+
+.clock{
+    margin-top:2rem;
+    justify-content: space-evenly;
+}
+
+.container .clock{
+    color: rgb(63, 184, 184);
 }
